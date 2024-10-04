@@ -1,3 +1,9 @@
+
+[![MyTests](https://github.com/Illialla/TestingLab/actions/workflows/test-action.yml/badge.svg)](https://github.com/Illialla/TestingLab/actions/workflows/test-action.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/Illialla/TestingLab/badge.svg?branch=main)](https://coveralls.io/github/Illialla/TestingLab?branch=main)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=Illialla_TestingLab&metric=alert_status)](https://sonarcloud.io/dashboard?id=Illialla_TestingLab)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Illialla_TestingLab&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Illialla_TestingLab)
+[![Code smells](https://sonarcloud.io/api/project_badges/measure?project=Illialla_TestingLab&metric=code_smells)](https://sonarcloud.io/dashboard?id=Illialla_TestingLab)
 ## План тестирования
 | Тест |                                                                 Описание                                                                 |     Входные данные     |                 Ожидаемый результат                  |
 |:----:|:----------------------------------------------------------------------------------------------------------------------------------------:|:----------------------:|:----------------------------------------------------:|
