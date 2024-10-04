@@ -30,5 +30,6 @@ jobs:
     - name: Submit coverage to Coveralls
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Add this line to set the GITHUB_TOKEN
       run: coveralls
 
