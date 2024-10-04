@@ -20,5 +20,5 @@ jobs:
       run: python -u -m unittest Tests/test.py
 
     - name: Coveralls
-    - uses: coverallsapp/github-action@v2
+      uses: coverallsapp/github-action@v2
 
