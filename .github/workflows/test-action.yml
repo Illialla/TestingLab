@@ -19,3 +19,6 @@ jobs:
     - name: Run Python unit tests
       run: python -u -m unittest Tests/test.py
 
+    - name: Coveralls
+    - uses: coverallsapp/github-action@v2
+
