@@ -21,12 +21,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install coveralls
 
-    - name: Run Python unit tests
+    - name: Run Python unittests
       run: |
         coverage run -m unittest discover -s Tests/test.py
         coverage report
         coverage xml
 
-    - name: Coveralls
-      uses: coverallsapp/github-action@v2
+    - name: Submit coverage to Coveralls
+      env:
+        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+      run: coveralls
 
