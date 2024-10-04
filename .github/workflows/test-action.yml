@@ -1,1 +1,20 @@
+name: MyTests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Run Python unit tests
+      run: python3 -u -m unittest tests/tests.py
 
