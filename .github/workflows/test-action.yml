@@ -23,7 +23,7 @@ jobs:
 
     - name: Run Python unittests
       run: |
-        coverage run -m unittest discover -s Tests/test.py
+        coverage run -m unittest Tests/test.py
         coverage report
         coverage xml
 
