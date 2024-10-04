@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  runt-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
