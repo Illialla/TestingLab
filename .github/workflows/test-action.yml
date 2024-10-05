@@ -47,3 +47,6 @@ jobs:
           args: >
             -Dsonar.projectKey=Illialla_TestingLab
             -Dsonar.organization=illialla
+            -Dsonar.sources=.
+            -Dsonar.exclusions=external/**
+            -Dsonar.cfamily.gcov.reportsPath=.
