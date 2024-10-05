@@ -28,16 +28,12 @@ class TestStringMethods(unittest.TestCase):
         assert find_roots(10 ** 6, 10 ** 6, 10 ** 6)
 
     def test_not_enough_args(self):
-        try:
+        with self.assertRaises(TypeError):
             find_roots(1, 2)
-        except TypeError:
-            print("Недостаточно аргументов")
 
     def test_wrong_arg_type(self):
-        try:
-            find_roots("а", 1, 2)
-        except TypeError:
-            print("Неверный тип данных")
+        with self.assertRaises(TypeError):
+            find_roots("a", 1, 2)
 
 if __name__ == '__main__':
     unittest.main()
