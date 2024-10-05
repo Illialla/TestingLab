@@ -45,8 +45,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -sonar.projectKey=Illialla_TestingLab
-            -sonar.organization=illialla
-            -sonar.sources=.
-            -sonar.exclusions=external/**
-            -sonar.cfamily.gcov.reportsPath=.
+            -Dsonar.projectKey=Illialla_TestingLab
+            -Dsonar.organization=illialla
+            -Dsonar.sources=.
+            -Dsonar.exclusions=external/**
+            -Dsonar.cfamily.gcov.reportsPath=.
