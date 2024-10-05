@@ -8,7 +8,7 @@ class TestStringMethods(unittest.TestCase):
     def test_one_root(self):
         assert find_roots(1, 2, 1) == (-1.0)
 
-    def test_find_roots3(self):
+    def test_complex_roots(self):
         assert find_roots(1, 2, 5) == (-1 + 2j, -1 - 2j)
 
     def test_division_by_zero(self):
@@ -18,7 +18,7 @@ class TestStringMethods(unittest.TestCase):
         # except ZeroDivisionError:
         #     pass  # Ожидаем ошибку деления на ноль
 
-    def test_find_roots5(self):
+    def test_null_b(self):
         assert find_roots(1, 0, -4) == (2.0, -2.0)
 
     def test_negative_nums(self):
@@ -26,6 +26,14 @@ class TestStringMethods(unittest.TestCase):
 
     def test_big_ints(self):
         assert find_roots(10 ** 6, 10 ** 6, 10 ** 6)
+
+    def test_not_enough_args(self):
+        with self.assertRaises(TypeError):
+            find_roots(1, 2)
+
+    def test_wrong_arg_type(self):
+        with self.assertRaises(TypeError):
+            find_roots("a", 1, 2)
 
 if __name__ == '__main__':
     unittest.main()
